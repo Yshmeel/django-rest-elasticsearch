@@ -3,8 +3,7 @@ from __future__ import absolute_import, unicode_literals
 
 from functools import reduce
 import re
-
-from django.utils import six
+import six
 from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
 
