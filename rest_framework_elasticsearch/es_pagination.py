@@ -18,7 +18,7 @@ class ElasticLimitOffsetPagination(LimitOffsetPagination):
         Paginate a queryset if required, either returning a
         page object, or `None` if pagination is not configured for this view.
         """
-        self.limit = self.get_limit(request)
+        self.limit = self.get_limit(request).value
         if self.limit is None:
             return None
         self.offset = self.get_offset(request)
